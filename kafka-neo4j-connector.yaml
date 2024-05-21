@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: connector
+  labels: 
+    app: kafka-neo4j-connector
+spec:
+  selector:
+    matchLabels:
+      app: kafka-neo4j-connector
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kafka-neo4j-connector
+    spec:
+      containers:
+        - name: kafka-neo4j-connector
+          image: veedata/kafka-neo4j-connect:latest
+          ports: 
+            - containerPort: 8083
+
+
