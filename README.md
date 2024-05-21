@@ -1,3 +1,7 @@
+
+
+![kafka](https://github.com/maitry98/Graph-Based-Data-Processing/assets/147111812/eb0c2c20-e461-40d1-910b-be36e8372f98)
+
 # mtrived4-project-2
 
 1. minikube start
